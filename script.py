@@ -9,3 +9,18 @@ print(df)
 
 # Remove duplicate rows
 df = df.drop_duplicates()
+
+# Check NA values
+df.isna().sum()
+
+# Handle NA values
+
+
+# Check column data type
+df.info()
+
+# Change column data type
+
+
+# Check potential problems
+
