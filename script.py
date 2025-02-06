@@ -4,6 +4,9 @@ df = pd.read_csv("../hospital_readmission_renamed_data.csv")
 
 print(df)
 
+# Identify the dependent column
+
+
 # Remove unnecessary columns
 
 
@@ -16,10 +19,10 @@ df.isna().sum()
 # Handle NA values
 
 
-# Check column data type
+# Check column data types
 df.info()
 
-# Change column data type
+# Change column data types
 df["Readmitted"] = df["Readmitted"].astype(bool)
 df["Smoker"] = df["Smoker"].astype(bool)
 df["AlcoholUse"] = df["AlcoholUse"].astype(bool)
