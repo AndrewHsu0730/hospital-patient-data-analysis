@@ -20,6 +20,19 @@ df.isna().sum()
 df.info()
 
 # Change column data type
+df["Readmitted"] = df["Readmitted"].astype(bool)
+df["Smoker"] = df["Smoker"].astype(bool)
+df["AlcoholUse"] = df["AlcoholUse"].astype(bool)
+df["RegularExercise"] = df["RegularExercise"].astype(bool)
+df["ChronicCondition"] = df["ChronicCondition"].astype(bool)
+df["HighRiskMedication"] = df["HighRiskMedication"].astype(bool)
+df["Gender"] = df["Gender"].astype("category")
+df["Ethnicity"] = df["Ethnicity"].astype("category")
+df["EducationLevel"] = df["EducationLevel"].astype("category")
+df["EmploymentStatus"] = df["EmploymentStatus"].astype("category")
+df["MaritalStatus"] = df["MaritalStatus"].astype("category")
+df["InsuranceType"] = df["InsuranceType"].astype("category")
+df["DischargeCondition"] = df["DischargeCondition"].astype("category")
 
 
 # Check potential problems
